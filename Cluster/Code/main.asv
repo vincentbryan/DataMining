@@ -1,0 +1,3 @@
+cd('..');
+c
+X = load('Aggregation_cluster=7.txt');
