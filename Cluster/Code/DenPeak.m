@@ -67,7 +67,7 @@ function [clusterResult] = DenPeak(X, k, dc)
 %      hold on;
 %      scatter(decision_graph(temp(1:k), 2), decision_graph(temp(1:k), 3), 'filled');
      
-    % 依据密度，每个点
+    % 每个点的类别，与比这个点密度高且距离这个点最近的点的类别一样
      for n = 1 : sample_num
          cur_index = decision_graph(n, 1);
          if clusterResult(cur_index) ~= 0
